@@ -1,9 +1,15 @@
-![JsonDB](https://navarrocarter.com/jsondb/assets/img/logo.png)
+<h1 align="center">
+  <br>
+  <br>
+  <img src="https://navarrocarter.com/jsondb/assets/img/logo.png">
+  <br>
+  <br>
+</h1>
 
 # JsonDB #
 
-### What is this? ###
+The fastest database system for PHP.
+<br>
+Made by [@mnavarrocarter](https://navarrocarter.com)
 
-JsonDB is a PHP class for CodeIgniter that allows using a Json file as a database for an application. It has all the power of SQL-based databases and all the flexibility of the document-based ones. And the best part: it's crazy fast! Give it a shot.
-
-[Official Website](https://navarrocarter.com/jsondb)
+[[ Official Website ]](https://navarrocarter.com/jsondb)&nbsp;&nbsp;[[ Download ]](https://github.com/mnavarrocarter/jsondb/releases/latest)
