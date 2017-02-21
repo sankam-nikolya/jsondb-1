@@ -9,7 +9,7 @@
 |
 */
 
-$config['jsondb_url'] = 'application/data/data.json';
+$config['jsondb_url'] = 'app/data/data.json';
 
 
 /* End of file jsondb.php */

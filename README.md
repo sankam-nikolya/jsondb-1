@@ -1,60 +1,8 @@
-# JsonDB
-A CodeIgniter library to CRUD to a json file serving as a database.
+# JsonDB #
 
-## Estructura Database
-```
-{
-    "tabla1": {
-        "metadata": {
-            "id": "32052352",
-            "created": "",
-            "modified": "",
-            "by":""
-        },
-        "relations": {
-            "tablarel": {
-                "camporel": "campotab",
-        },
-        "1": {
-            "campo": "valor",
-            "campo": "valor",
-            "campo": "valor",
-            "campo": "valor",
-            "campo": "valor"
-        }
-    },
-    "alumnos": {
-        "1": {
-            "campo": "valor",
-            "campo": "valor",
-            "campo": "valor",
-            "campo": "valor",
-            "campo": "valor"
-        },
-        "2": {
-            "campo": "valor",
-            "campo": "valor",
-            "campo": "valor",
-            "campo": "valor",
-            "campo": "valor"
-        }
-    },
-    "notas": {
-        "1": {
-            "campo": "valor",
-            "campo": "valor",
-            "campo": "valor",
-            "campo": "valor",
-            "campo": "valor"
-        },
-        "2": {
-            "campo": "valor",
-            "campo": "valor",
-            "campo": "valor",
-            "campo": "valor",
-            "campo": "valor"
-        }
-    }
+![JsonDB](https://navarrocarter.com/jsondb/assets/img/logo.png)
 
-}
-```
+### What is this? ###
+
+JsonDB is a PHP class for CodeIgniter that allows using a Json file as a database for an application. It has all the power of SQL-based databases and all the flexibility of the document-based ones. And the best part: it's crazy fast! Give it a shot.
+

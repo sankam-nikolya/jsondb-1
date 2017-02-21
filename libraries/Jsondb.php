@@ -18,8 +18,7 @@ class Jsondb {
 	  * @access	public
 	  *
 	  */
-	public function __construct()
-	{	
+	public function __construct() {
 		$this->ci =& get_instance();
 		// Load config file
 		$this->ci->load->config('jsondb');
@@ -30,7 +29,7 @@ class Jsondb {
 	}
 
 	 /**
-     * Decodes the json and returns it as an object. If $array is set tro true, returns an array. 
+     * Decodes the json and returns it as an object. If $array is set to true, returns an array. 
      *
      * @param boolean $array
      * @return array or object
@@ -60,10 +59,61 @@ class Jsondb {
      * @param string $name
      * @access public 
      */
-	public function new_table($name) {
+	public function create_table($name) {
 		$query = $this->decode(true);
-		$query[$name] = array();
-		return $this->encode($query);
+		if ($query[$name]) {
+			return 0;
+		} else {
+			$query[$name] = array();
+			$query[$name]['_metadata'] = array(
+					'id'		=> uniqid(),
+					'created' 	=> intval(time()),
+					'modified' 	=> intval(time())
+				);	
+			$this->encode($query);
+			return $query[$name]['metadata']['id'];
+		}
+	}
+
+	/**
+     * Deletes a table.
+     *
+     * @param string $name
+     * @access public 
+     */
+	public function drop_table($name) {
+		$query = $this->decode(true);
+		if ($query[$name]) {
+			unset($query[$name]);
+			$this->encode($query);
+			return TRUE;
+		} else {
+			return 0;
+		}
+	}
+
+	/**
+     * Empties a table.
+     *
+     * @param string $name
+     * @access public 
+     */
+	public function empty_table($name) {
+		$query = $this->decode(true);
+		$save_id = $query[$name]['_metadata']['id'];
+		$save_created = $query[$name]['_metadata']['created'];
+		if ($query[$name]) {
+			foreach ($query[$name] as $key => $val) {
+				unset($query[$name][$key]);
+			}
+			$query[$name]['_metadata']['id'] = $save_id;
+			$query[$name]['_metadata']['created'] = $save_created;
+			$query[$name]['_metadata']['modified'] = intval(time());
+			$this->encode($query);
+			return TRUE;
+		} else {
+			return 0;
+		}
 	}
 
 	/**
@@ -78,7 +128,7 @@ class Jsondb {
 	}
 
 	/**
-     * Gets one item from the specified $table, whose $field matches the $value sended.
+     * Gets one whole record from the specified $table, whose $field matches the $value sended.
      *
      * @param string $table
      * @param string $field
@@ -86,13 +136,18 @@ class Jsondb {
      * @return object
      * @throws Error if field or table are not found (TODO)
      */
-	public function get_one($table, $field, $value) {
+	public function get_record($table, $field, $value) {
 		$query = $this->decode();
-		foreach ($query->$table as $item) {
-			if($item->$field == $value) {
-				 return $item;
-			}
-        } 
+		if (!$query->$table) {
+			return 0;
+		} else {
+			foreach ($query->$table as $item) {
+				if($item->$field == $value) {
+					 return $item;
+				}
+		    }
+		    return 0;
+		}
 	}
 
 	 /**
@@ -105,17 +160,19 @@ class Jsondb {
      * @return array
      * @throws Error if field or table are not found (TODO)
      */
-	public function get($table, $field = false, $value = false, $sortfield = false) {
+	public function get_records($table, $field = false, $value = false, $sortfield = false) {
 		$query = $this->decode(true);
 		$result = array();
 		// Primero veo si tengo que obtener todos los datos o sólo los que ven una condición
-		if($field && $value) {
+		if($field) {
 			foreach ($query[$table] as $item) {
 				if($item[$field] == $value) {
 					$result[] = $item;
 				}
 	        }  
 	    } else {
+	    	unset($query[$table]['_metadata']);
+	    	unset($query[$table]['_relations']);
 	    	$result = $query[$table];
 	    }
 		// Ordeno el result si hay campo. Si no, simplemente devuelvo.
@@ -139,63 +196,74 @@ class Jsondb {
      * @param array $array
      * @throws Error if field or table are not found (TODO)
      */
-	public function update($table, $field, $value, $array) {
+	public function update_record($table, $field, $value, $array) {
 		$query = $this->decode(true);
-		foreach ($query[$table] as $key => $val) {
-			if ($val[$field] == $value) {
-				$query[$table][$key] = array_replace($query[$table][$key], $array);	
+		if (!$query[$table]) {
+			return 0;
+		} else {
+			foreach ($query[$table] as $key => $val) {
+				if ($val[$field] == $value) {
+					$query[$table][$key] = array_replace($query[$table][$key], $array);
+					$query[$table][$key]['modified'] = intval(time());
+					$query[$table]['_metadata']['modified'] = intval(time());
+					$this->encode($query);
+					return TRUE;
+				}
 			}
+			return 0;		
 		}
-		$this->encode($query);
 	}
 
 	/**
-     * Updates the options with a $data array.
-     *
-     * @param string $data
-     * @throws Error if field or table are not found (TODO)
-     */
-	public function update_options($data) {
-		$query = $this->decode(true);
-		$query['options'] = array_replace($query['options'], $data);
-		$this->encode($query);
-	}
-
-	/**
-     * Deletes an item from $table whose $field matches the $value sended.
+     * Deletes an record from $table whose $field matches the $value sended.
      *
      * @param string $table
      * @param string $field
      * @param string $value
      * @throws Error if field or table are not found (TODO)
      */
-	public function delete($table, $field, $value) {
+	public function delete_record($table, $field, $value) {
 		$query = $this->decode(true);
-		foreach($query[$table] as $key => $val) {
-		   if($val[$field] == $value){
-		      unset($query[$table][$key]);
-		   }
+		if (!$query[$table]) {
+			return 0;
+		} else {
+			foreach($query[$table] as $key => $val) {
+			   if($val[$field] == $value){
+			      unset($query[$table][$key]);
+			      $query[$table]['_metadata']['modified'] = intval(time());
+			      $this->encode($query);
+			      return TRUE;
+			   }
+			}
+			return 0;
 		}
-		$this->encode($query);
+			
+		
 	}
 
 	/**
-     * Creates an item on $table with $data array. Then returns the unique id of that created item.
+     * Creates an record on $table with $data array. Then returns the unique id of that created item.
      *
      * @param string $table
      * @param array $data
      * @return string 'Unique id'
      * @throws Error if field or table are not found (TODO)
      */
-	public function create($table, $data) {
+	public function insert_record($table, $data) {
 		$query = $this->decode(true);
-		$dbdata['id'] = uniqid();
-		foreach ($data as $key => $val) {
-			$dbdata[$key] = $val;
+		if ($query[$table]) {
+			$dbdata['id'] = uniqid();
+			$dbdata['created'] = intval(time());
+			$dbdata['modified'] = intval(time());
+			foreach ($data as $key => $val) {
+				$dbdata[$key] = $val;
+			}
+			array_push($query[$table], $dbdata);
+			$this->encode($query);
+			return $dbdata['id'];
+		} else {
+			return 0;
 		}
-		array_push($query[$table], $dbdata);
-		$this->encode($query);
-		return $dbdata['id'];
 	}
 
 }
