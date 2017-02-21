@@ -66,7 +66,7 @@ class Jsondb {
       */
 	public function restore() {
 		$file = $this->jsondb_dir.$this->jsondb_active;
-		$backup = $file = $this->jsondb_dir.$this->jsondb_default;
+		$backup = file_get_contents($this->jsondb_dir.$this->jsondb_default);
 		file_put_contents($file, $backup);
 		return;
 	}
@@ -89,7 +89,7 @@ class Jsondb {
 					'modified' 	=> intval(time())
 				);	
 			$this->encode($query);
-			return $query[$name]['metadata']['id'];
+			return $query[$name]['_metadata']['id'];
 		}
 	}
 

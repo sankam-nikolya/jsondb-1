@@ -35,18 +35,18 @@
     },
     "groups": {
         "_metadata": {
-            "id": "58aa889f95172",
-            "created": 1487571103,
-            "modified": 1487571103
+            "id": "58acac98d41d9",
+            "created": 1487711384,
+            "modified": 1487711384
         },
         "0": {
-            "id": "58aa917c551fb",
-            "created": 1487573372,
-            "modified": 1487573372,
+            "id": "58acad5b567bd",
+            "created": 1487711579,
+            "modified": 1487711579,
             "name": "Admins",
-            "description": "A group of admins",
+            "description": "System Administrators",
             "is_active": "1",
             "max_members": "10"
         }
     }
-}
+}	
