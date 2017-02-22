@@ -7,7 +7,7 @@
 | This file contains the JsonDB main functions.
 |
 | Developed by: Matías Navarro Carter
-| Version: 1.0.0
+| Version: 1.1.0
 | License: MIT
 |
 */
