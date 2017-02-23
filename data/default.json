@@ -30,7 +30,7 @@
             "name": "Andrew Doe",
             "email": "andrew@doe.com",
             "is_active": "0",
-            "password": "mypassword"
+            "password": "mypasswor"
         }
     },
     "groups": {
