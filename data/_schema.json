@@ -1,0 +1,31 @@
+{
+    "users": {
+        "_metadata": {
+            "id": "58aa889721701",
+            "created": 1487571095,
+            "modified": 1488911551
+        },
+        "0": {
+            "id": "58aa93f681f4g",
+            "created": 1487574006,
+            "modified": 1487645679,
+            "name": "Default User",
+            "email": "default@email.com",
+            "is_active": "1",
+            "password": "",
+            "salt": ""
+        }
+    },
+    "tokens": [
+        {
+            "id": "58aa93f681f4h",
+            "created": 1487574006,
+            "lastused": 1489037008,
+            "appname": "JsonDB Web",
+            "string": "dXNlcm5hbWU6cGFzc3dvcmQ=",
+            "is_active": "1",
+            "max_usage": 10000,
+            "current": 21
+        }
+    ]
+}

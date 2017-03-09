@@ -3,7 +3,7 @@
         "_metadata": {
             "id": "58aa889721702",
             "created": 1487571095,
-            "modified": 1487645679
+            "modified": 1488911551
         },
         "0": {
             "id": "58aa93f681f4f",
@@ -12,7 +12,7 @@
             "name": "John Doe",
             "email": "john@doe.com",
             "is_active": "1",
-            "group_id": "58aa917c551fb"
+            "password": "mypassword"
         },
         "1": {
             "id": "58aa9c6461cd7",
@@ -21,7 +21,7 @@
             "name": "Peter Doe",
             "email": "peter@doe.com",
             "is_active": "0",
-            "group_id": "58aa917c551fb"
+            "password": "mypassword"
         },
         "2": {
             "id": "58ab603df29bd",
@@ -47,6 +47,43 @@
             "description": "System Administrators",
             "is_active": "1",
             "max_members": "10"
+        },
+        "1": {
+            "id": "58bcd9179b9c0",
+            "created": 1488771351,
+            "modified": 1488771351,
+            "name": "Users",
+            "description": "Application Users",
+            "is_active": "1",
+            "max_members": "9999"
+        }
+    },
+    "users_to_groups": {
+        "_metadata": {
+            "id": "58be00046a2e1",
+            "created": 1488846852,
+            "modified": 1488847192
+        },
+        "0": {
+            "id": "58be00741b370",
+            "created": 1488846964,
+            "modified": 1488846964,
+            "user_id": "58aa93f681f4f",
+            "group_id": "58acad5b567bd"
+        },
+        "1": {
+            "id": "58be01227c1ff",
+            "created": 1488847138,
+            "modified": 1488847138,
+            "user_id": "58aa9c6461cd7",
+            "group_id": "58bcd9179b9c0"
+        },
+        "2": {
+            "id": "58be0158302d4",
+            "created": 1488847192,
+            "modified": 1488847192,
+            "user_id": "58ab603df29bd",
+            "group_id": "58bcd9179b9c0"
         }
     }
-}	
+}

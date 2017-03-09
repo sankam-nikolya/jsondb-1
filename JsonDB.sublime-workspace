@@ -1,0 +1,434 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"mon",
+				"mongo_db"
+			],
+			[
+				"pass",
+				"password_user"
+			],
+			[
+				"encry",
+				"mcrypt_encrypt"
+			],
+			[
+				"mcr",
+				"mcrypt_encrypt"
+			],
+			[
+				"passwor",
+				"password_user"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"heg",
+				"height\tAttr"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 342.0,
+		"last_filter": "insta",
+		"selected_items":
+		[
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"statu",
+				"Git: Status"
+			],
+			[
+				"git ",
+				"Git: Custom Command"
+			],
+			[
+				"cha",
+				"Git: Change Branch"
+			],
+			[
+				"che",
+				"Git: Checkout Current File"
+			],
+			[
+				"change",
+				"Changelog"
+			],
+			[
+				"git che",
+				"Git: Checkout Tag"
+			],
+			[
+				"bran",
+				"Git: Change Branch"
+			],
+			[
+				"git chec",
+				"Git: Checkout Current File"
+			],
+			[
+				"push",
+				"Git: Push"
+			],
+			[
+				"comm",
+				"Git: Commit"
+			],
+			[
+				"add",
+				"Git: Add All"
+			],
+			[
+				"new",
+				"Git: New Branch"
+			],
+			[
+				"gitig",
+				"Gitignore: New gitignore"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Install Package Control"
+			]
+		],
+		"width": 446.0
+	},
+	"console":
+	{
+		"height": 118.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/D/Dev.Libraries/jsondb/config/jsondb.php",
+		"/D/Dev.Libraries/jsondb/JsonDB.sublime-workspace",
+		"/D/Dev.Libraries/jsondb/data/default.json",
+		"/D/Dev.Libraries/jsondb/.gitignore",
+		"/C/Users/mnava/Desktop/Navarrocarter.com/index.html",
+		"/C/Users/mnava/Desktop/Navarrocarter.com/css/bootstrap.min.css",
+		"/C/Users/mnava/Desktop/Navarrocarter.com/css/bootstrap.css",
+		"/C/Users/mnava/Desktop/Navarrocarter.com/css/bootstrap-theme.min.css",
+		"/C/Users/mnava/Desktop/Navarrocarter.com/css/sticky-footer-navbar.css",
+		"/C/Users/mnava/Desktop/Navarrocarter.com/css/ie10-viewport-bug-workaround.css",
+		"/C/Users/mnava/Desktop/Navarrocarter.com/js/ie10-viewport-bug-workaround.js",
+		"/C/Users/mnava/Desktop/Navarrocarter.com/js/holder.min.js",
+		"/C/Users/mnava/Desktop/Navarrocarter.com/css/carousel.css",
+		"/C/Users/mnava/Desktop/Navarrocarter.com/bootstrap.css",
+		"/C/Users/mnava/Desktop/Navarrocarter.com/bootstrap.min.css",
+		"/C/Users/mnava/AppData/Local/Temp/scp02135/etc/apache2/sites-available/navarrocarter.com-ssl",
+		"/C/Users/mnava/AppData/Local/Temp/scp41945/etc/apache2/sites-available/navarrocarter.com.conf",
+		"/C/Users/mnava/AppData/Local/Temp/scp36052/home/mnavarro/scripts/create-vhost",
+		"/C/Users/mnava/AppData/Local/Temp/scp58066/etc/apache2/apache2.conf",
+		"/C/Users/mnava/AppData/Local/Temp/scp52985/var/log/apache2/error.log",
+		"/C/Users/mnava/AppData/Local/Temp/scp47754/etc/apache2/sites-available/default-ssl.conf",
+		"/C/Users/mnava/AppData/Local/Temp/scp59550/etc/apache2/ports.conf",
+		"/C/Users/mnava/AppData/Local/Temp/scp52135/var/log/apache2/access.log",
+		"/C/Users/mnava/AppData/Local/Temp/scp52661/var/log/apache2/other_vhosts_access.log",
+		"/C/Users/mnava/AppData/Local/Temp/scp40050/etc/apache2/sites-enabled/navarrocarter.com.conf",
+		"/C/Users/mnava/AppData/Local/Temp/scp34466/etc/letsencrypt/live/navarrocarter.com/cert.pem",
+		"/C/Users/mnava/AppData/Local/Temp/scp34513/etc/letsencrypt/live/navarrocarter.com-0001/cert.pem",
+		"/C/Users/mnava/AppData/Local/Temp/scp33052/home/mnavarro/scripts/create-vhost",
+		"/C/Users/mnava/Desktop/ubuntu1604_createvhost",
+		"/C/Users/mnava/AppData/Local/Temp/scp28945/etc/apache2/sites-available/default-ssl.conf",
+		"/C/Users/mnava/AppData/Local/Temp/scp11475/etc/apache2/sites-available/navarrocarter.com.conf",
+		"/C/Users/mnava/AppData/Local/Temp/scp13137/etc/apache2/sites-available/navarrocarter.com.conf-ssl",
+		"/C/Users/mnava/AppData/Local/Temp/scp04258/etc/apache2/sites-available/navarrocarter.com.conf",
+		"/C/Users/mnava/AppData/Local/Temp/scp08212/etc/letsencrypt/options-ssl-apache.conf",
+		"/C/Users/mnava/AppData/Local/Temp/scp03398/etc/apache2/sites-available/default-ssl.conf",
+		"/C/Users/mnava/AppData/Local/Temp/scp27651/home/mnavarro/scripts/create-vhost",
+		"/C/Users/mnava/AppData/Local/Temp/scp32880/home/mnavarro/scripts/create-vhost",
+		"/C/Users/mnava/AppData/Local/Temp/scp50212/etc/apache2/sites-available/default-ssl.conf",
+		"/C/Users/mnava/Desktop/ubuntu1604_createvhost.bash",
+		"/C/Users/mnava/Desktop/ubuntu1604_createvhost.sh",
+		"/C/Users/mnava/AppData/Local/Temp/scp05327/home/mnavarro/scripts/create-vhost",
+		"/C/Users/mnava/AppData/Local/Temp/scp04081/etc/apache2/apache2.conf",
+		"/C/Users/mnava/AppData/Local/Temp/scp53876/home/mnavarro/scripts/create-vhost",
+		"/D/Dev.Projects/waduweb.dev/.gitignore",
+		"/D/Dev.Projects/waduweb.dev/app/models/Auth_model.php",
+		"/D/Dev.Projects/waduweb.dev/app/config/constants.php",
+		"/D/Dev.Projects/waduweb.dev/app/config/database.php",
+		"/D/Dev.Projects/waduweb.dev/app/views/auth/register_client.php",
+		"/D/Dev.Projects/waduweb.dev/app/views/auth/register_provider.php",
+		"/D/Dev.Projects/waduweb.dev/bitbucket-pipelines.yml",
+		"/D/Dev.Projects/waduweb.dev/app/controllers/Auth.php",
+		"/D/Dev.Projects/waduweb.dev/app/config/config.php",
+		"/D/Dev.Projects/waduweb.dev/app/config/email.php",
+		"/D/Dev.Projects/waduweb.dev/.htaccess",
+		"/D/Dev.Projects/ncai.git/.htaccess",
+		"/C/Users/mnava/Downloads/demo.ncai.cl-Feb-2017",
+		"/D/Dev.Projects/waduweb.dev/app/views/auth/email/register_provider_wadu.php",
+		"/D/Dev.Projects/waduweb.dev/app/views/auth/email/register_client.html",
+		"/D/Dev.Projects/waduweb.dev/app/views/auth/email/register_provider.html",
+		"/D/Dev.Projects/waduweb.dev/app/views/auth/email/provider_welcome.html",
+		"/D/Dev.Projects/waduweb.dev/app/views/auth/email/client_welcome.html",
+		"/D/Dev.Projects/waduweb.dev/app/views/auth/email/register_client.php",
+		"/D/Dev.Libraries/jsondb/libraries/Jsondb.php",
+		"/D/Dev.Libraries/jsondb/index.php",
+		"/D/Dev.Libraries/jsondb/data/data.json",
+		"/D/Dev.Projects/waduweb.dev/app/views/auth/email/client_welcome.php",
+		"/D/Dev.Projects/waduweb.dev/app/views/auth/email/provider_welcome.php",
+		"/D/Dev.Projects/waduweb.dev/app/views/auth/email/register_provider.php",
+		"/D/Dev.Projects/waduweb.dev/app/controllers/Home.php",
+		"/D/Dev.Projects/waduweb.dev/assets/js/custom.js",
+		"/D/Dev.Projects/waduweb.dev/app/views/layouts/main.php",
+		"/D/Dev.Projects/waduweb.dev/app/views/auth/email/provider_register.php",
+		"/D/Dev.Projects/waduweb.dev/app/views/auth/email/wadu_provider_register.php",
+		"/D/Dev.Projects/waduweb.dev/app/views/auth/email/auth_validate.php",
+		"/D/Dev.Projects/waduweb.dev/app/views/home.php",
+		"/C/Users/mnava/AppData/Roaming/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
+		"/C/Users/mnava/AppData/Roaming/Sublime Text 3/Packages/SublimeLinter/SublimeLinter.sublime-settings",
+		"/C/Users/mnava/Downloads/valida-rut-js/validarut.js",
+		"/D/Dev.Projects/waduweb.dev/app/views/register_client.php",
+		"/D/Dev.Projects/waduweb.dev/app/views/register_provider.php",
+		"/D/Dev.Projects/waduweb.dev/assets/css/custom.css",
+		"/D/Dev.Projects/waduweb.dev/app/views/auth/email/client_early_welcome.html",
+		"/D/Dev.Projects/waduweb.dev/app/config/autoload.php",
+		"/D/Dev.Projects/waduweb.dev/assets/css/variables.less",
+		"/D/Dev.Projects/ncai.git/app/models/Auth_model.php",
+		"/D/Dev.Projects/ncai.git/app/controllers/Auth.php",
+		"/D/Dev.Projects/waduweb.dev/app/views/register_user.php",
+		"/D/Dev.Projects/waduweb.dev/assets/css/bootstrap-theme.min.css",
+		"/D/Dev.Projects/themarkdownblog.dev/app/data/data.json",
+		"/D/Dev.Projects/waduweb.dev/app/views/login.php",
+		"/D/Dev.Projects/edutech.dev/application/helpers/styles_helper.php",
+		"/C/Users/mnava/Downloads/Logotipo.ai",
+		"/D/Dev.Projects/waduweb.dev/app/views/layouts/navbar.php",
+		"/D/Dev.Projects/waduweb.dev/app/views/sample.php",
+		"/D/Dev.Projects/waduweb.dev/app/views/layouts/footer.php",
+		"/D/Dev.Projects/waduweb.dev/app/config/routes.php",
+		"/C/Users/mnava/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/.jsbeautifyrc",
+		"/D/Dev.Projects/waduweb.dev/index.php",
+		"/D/Dev.Projects/waduweb.dev/Codeigniter/.gitignore",
+		"/D/Dev.Projects/edutech.dev/application/models/Default_users_model.php",
+		"/D/Dev.Projects/edutech.dev/application/views/layouts/main.php",
+		"/D/Dev.Projects/edutech.dev/application/models/Auth_model.php",
+		"/D/Dev.Projects/edutech.dev/application/controllers/Auth.php",
+		"/D/Dev.Projects/edutech.dev/application/views/layouts/menulateral.php",
+		"/C/Users/mnava/AppData/Roaming/Sublime Text 3/Packages/User/Side Bar.sublime-settings",
+		"/D/Dev.Projects/edutech.dev/application/views/layouts/notifications.php",
+		"/D/Dev.Projects/edutech.dev/application/views/dashboard.php",
+		"/D/Dev.Projects/edutech.dev/application/views/auth/login.php",
+		"/D/Dev.Projects/edutech.dev/application/controllers/Home.php",
+		"/C/WAMP64/bin/apache/apache2.4.23/bin/php.ini",
+		"/D/Dev.Projects/edutech.dev/application/views/panel.php",
+		"/D/Dev.Projects/edutech.dev/application/helpers/group_helper.php",
+		"/D/Dev.Projects/edutech.dev/application/config/mongo_db.php",
+		"/D/Dev.Projects/edutech.dev/application/libraries/Mongo_db.php",
+		"/D/Dev.Projects/edutech.dev/application/config/routes.php",
+		"/D/Dev.Projects/edutech.dev/application/config/email.php",
+		"/D/Dev.Projects/ncai.git/app/config/email.php",
+		"/D/Dev.Projects/edutech.dev/application/config/autoload.php",
+		"/C/WAMP64/bin/apache/apache2.4.23/conf/extra/httpd-vhosts.conf",
+		"/D/Dev.Projects/edutech.dev/composer.json",
+		"/C/MongoDB/data/db/kbase/collection-0-6976457776285888252.wt",
+		"/C/Users/mnava/Desktop/Test/index.html",
+		"/C/Users/mnava/Desktop/blog.md",
+		"/D/Dev.Projects/edutech.dev/application/controllers/auth.php",
+		"/D/Development.Sites/geoportalnew.git/application/config/config.php",
+		"/C/Users/mnava/Desktop/install.php",
+		"/C/Program Files (x86)/iSpring/Free Cam 8/lng/cam.xml",
+		"/C/Program Files (x86)/iSpring/Free Cam 8/lng/cam_quickstart.xml"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"include",
+			"virtual",
+			"@waduapp.com",
+			"waduapp.com",
+			"@wadu.cl",
+			"no-reply@waduapp.com",
+			"register_provider",
+			"Direc",
+			"direccion",
+			"no-reply@waduapp.com",
+			"png",
+			"svg",
+			"png",
+			".svg",
+			"rut",
+			"contacto@wadu.cl",
+			"te has ",
+			"contacto@",
+			"no-reply",
+			"base_url",
+			"img",
+			"Proveedor",
+			"$data",
+			"img",
+			"border:1px",
+			"input-group-addon",
+			"form-control",
+			"font-size",
+			"height",
+			"group",
+			"notifications",
+			"find_one(",
+			"message",
+			"extensi"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 24.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 98.0
+	},
+	"pinned_build_system": "",
+	"project": "JsonDB.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 189.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -14,8 +14,8 @@
 */
 
 $config['jsondb_dir'] = 'app/data/';
-$config['jsondb_default'] = 'default.json';
-$config['jsondb_active'] = 'data.json';
+$config['jsondb_default'] = 'default';
+$config['jsondb_active'] = 'data';
 $config['jsondb_log'] = true;
 
 
